@@ -1,9 +1,10 @@
 import redis
+from config.redis_config import settings
 
 redis_client = redis.Redis(
-    host='localhost',
-    port=6379,
-    db=0,
+    host = settings.host,
+    port = settings.port,
+    db = settings.db,
     decode_responses=True
 )
 
