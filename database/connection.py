@@ -9,6 +9,7 @@ redis_client = redis.Redis(
     host=settings.host,
     port=settings.port,
     db=settings.db,
+    password=settings.password,
     decode_responses=True,
     socket_connect_timeout=2, 
     socket_timeout=2,         
